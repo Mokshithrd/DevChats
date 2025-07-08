@@ -21,12 +21,12 @@ const MessageScreen = ({ Switch, setSwitch }) => {
     const markMessagesAsRead = async () => {
       if (!selectedconversation?._id) return;
       try {
-        await fetch(`/api/messages/mark-read/${selectedconversation._id}`, {
+        await fetch(`https://devchats-mokshithrd-44up.onrender.com/api/messages/mark-read/${selectedconversation._id}`, {
           method: "PATCH",
           credentials: "include",
         });
       } catch (error) {
-        console.error("❌ Failed to mark messages as read:", error);
+        console.error("Failed to mark messages as read:", error);
       }
     };
     markMessagesAsRead();

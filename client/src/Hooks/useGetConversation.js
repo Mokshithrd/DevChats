@@ -11,7 +11,7 @@ useEffect(() => {
   const getCoversations = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/users", {
+      const res = await fetch("https://devchats-mokshithrd-44up.onrender.com/api/users", {
         headers: {
           Authorization: `Bearer ${authUser.token}`,
           "Content-Type": "application/json",

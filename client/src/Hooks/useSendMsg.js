@@ -7,7 +7,7 @@ const useSendMsg = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `/api/messages/send/${selectedconversation._id}`,
+        `https://devchats-mokshithrd-44up.onrender.com/api/messages/send/${selectedconversation._id}`,
         {
           method: "POST",
           headers: {

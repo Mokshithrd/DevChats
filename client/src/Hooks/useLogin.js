@@ -7,7 +7,7 @@ const useLogin = () => {
   const login = async ({ username, password }) => {
     setLoading(true);
     try {
-      const res = await fetch("api/auth/login", {
+      const res = await fetch("https://devchats-mokshithrd-44up.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),

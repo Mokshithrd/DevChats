@@ -11,7 +11,7 @@ const useUnreadCounts = () => {
       if (!authUser?._id) return;
 
       try {
-        const res = await fetch(`http://localhost:5000/api/messages/unread-counts/${authUser._id}`);
+        const res = await fetch(`https://devchats-mokshithrd-44up.onrender.com/api/messages/unread-counts/${authUser._id}`);
         const data = await res.json();
 
         const countMap = {};

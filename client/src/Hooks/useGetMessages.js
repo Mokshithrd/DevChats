@@ -8,7 +8,7 @@ const useGetMessages = () => {
     setLoading(true);
     const Getmsg = async () => {
       try {
-        const res = await fetch(`/api/messages/${selectedconversation._id}`);
+        const res = await fetch(`https://devchats-mokshithrd-44up.onrender.com/api/messages/${selectedconversation._id}`);
         const data = await res.json();
         if (data.error) {
           throw new Error(data.error);

@@ -12,7 +12,7 @@ const NotificationIcon = () => {
 
       try {
         const res = await fetch(
-          `http://localhost:5000/api/messages/unread-count/${authUser._id}`,
+          `https://devchats-mokshithrd-44up.onrender.com/api/messages/unread-count/${authUser._id}`,
           {
             method: "GET",
             headers: {
